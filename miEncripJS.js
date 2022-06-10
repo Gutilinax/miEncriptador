@@ -3,6 +3,7 @@
 var botonEncriptar = document.querySelector("#btn-encriptar");
 var botonDesencriptar = document.querySelector("#btn-desencriptar");
 var botonCopiar = document.querySelector("#btn-copy");
+var botonLimpiar = document.querySelector("#btn-clean");
 
 
 botonEncriptar.addEventListener("click", function(event){
@@ -53,3 +54,12 @@ document.querySelector("#input-texto").value = textoCopiado;
 
 
 })
+botonLimpiar.addEventListener("click", function(event){
+
+    event.preventDefault;
+        
+    document.querySelector("#input-texto").value = "";
+    document.querySelector("#msg").value = "";
+    
+    
+    })
